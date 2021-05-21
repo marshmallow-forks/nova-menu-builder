@@ -100,7 +100,6 @@ class MenuBuilder extends Tool
         $menusTableName = MenuBuilder::getMenusTableName();
 
         return array_merge([
-            'menu_id' => "required|exists:$menusTableName,id",
             'name' => 'required|min:1',
             'locale' => 'required',
             'value' => 'present',
